@@ -1,0 +1,254 @@
+#LyX 2.3 created this file. For more info see http://www.lyx.org/
+\lyxformat 544
+\begin_document
+\begin_header
+\save_transient_properties true
+\origin unavailable
+\textclass article
+\use_default_options true
+\maintain_unincluded_children false
+\language english
+\language_package default
+\inputencoding auto
+\fontencoding global
+\font_roman "times" "Times New Roman"
+\font_sans "default" "default"
+\font_typewriter "default" "default"
+\font_math "auto" "auto"
+\font_default_family default
+\use_non_tex_fonts false
+\font_sc false
+\font_osf false
+\font_sf_scale 100 100
+\font_tt_scale 100 100
+\use_microtype false
+\use_dash_ligatures true
+\graphics default
+\default_output_format default
+\output_sync 0
+\bibtex_command default
+\index_command default
+\paperfontsize 12
+\spacing double
+\use_hyperref true
+\pdf_bookmarks true
+\pdf_bookmarksnumbered false
+\pdf_bookmarksopen false
+\pdf_bookmarksopenlevel 1
+\pdf_breaklinks false
+\pdf_pdfborder false
+\pdf_colorlinks false
+\pdf_backref false
+\pdf_pdfusetitle true
+\papersize default
+\use_geometry false
+\use_package amsmath 1
+\use_package amssymb 1
+\use_package cancel 1
+\use_package esint 1
+\use_package mathdots 1
+\use_package mathtools 1
+\use_package mhchem 1
+\use_package stackrel 1
+\use_package stmaryrd 1
+\use_package undertilde 1
+\cite_engine basic
+\cite_engine_type default
+\biblio_style unsrt
+\use_bibtopic false
+\use_indices false
+\paperorientation portrait
+\suppress_date false
+\justification true
+\use_refstyle 1
+\use_minted 0
+\index Index
+\shortcut idx
+\color #008000
+\end_index
+\secnumdepth 3
+\tocdepth 3
+\paragraph_separation indent
+\paragraph_indentation default
+\is_math_indent 0
+\math_numbering_side default
+\quotes_style english
+\dynamic_quotes 0
+\papercolumns 1
+\papersides 1
+\paperpagestyle default
+\tracking_changes false
+\output_changes false
+\html_math_output 0
+\html_css_as_file 0
+\html_be_strict false
+\end_header
+
+\begin_body
+
+\begin_layout Title
+Paper 1 Review
+\end_layout
+
+\begin_layout Author
+John Henry Galino
+\end_layout
+
+\begin_layout Section
+Summary
+\end_layout
+
+\begin_layout Standard
+In his 2008 paper titled 
+\begin_inset Quotes eld
+\end_inset
+
+Bitcoin: A Peer-to-Peer Electronic Cash System
+\begin_inset Quotes erd
+\end_inset
+
+, Satoshi Nakamoto states that Internet commerce has become very reliant
+ on having third-party institutions process electronic payments.
+ According to him, this model of commerce prevents completely non-reversible
+ transactions, which results to several disadvantages.
+ What is needed is an electronic payment system that relies on cryptographic
+ proof, which will enable non-reversible transactions and remove the said
+ disadvantages.
+ However, a prominent problem in electronic payment systems is 
+\emph on
+double-spending
+\emph default
+, or the possibility that a person may cheat by sending the same unit of
+ digital currency to two different people.
+ As such, Nakamoto presents a decentralized solution to the double-spending
+ problem through a peer-to-peer network which timestamps transactions.
+ In this peer-to-peer network, all transactions are announced to all participati
+ng nodes.
+ When a node receives a transaction, it checks for its validity and then
+ places them in a block along with other transactions to be timestamped.
+ The node then performs proof of work by computing a hash of the items in
+ the block until it meets certain specifications.
+ When such a hash has been successfully computed, the node will then broadcast
+ the block to the other nodes in the network.
+ The other nodes in the network will then check the validity of the transactiion
+s in the block and express their acceptance by creating the next block and
+ including the hash of the previous block in the computation of the next
+ hash.
+ These actions result to each node having a chain of blocks 
+\begin_inset Foot
+status open
+
+\begin_layout Plain Layout
+A 
+\size normal
+\emph on
+blockchain
+\emph default
+, if you will.
+\end_layout
+
+\end_inset
+
+ which serve as a record of the order of transactions, with the longest
+ chain being considered as the correct record.
+ With this scheme, an electronic payment system can be made which isn't
+ reliant on third-party institutions while being able to prevent the double-spen
+ding problem.
+ 
+\end_layout
+
+\begin_layout Section
+Review
+\end_layout
+
+\begin_layout Standard
+Satoshi Nakamoto's paper presents some very novel ideas.
+ His
+\begin_inset Foot
+status open
+
+\begin_layout Plain Layout
+Satoshi Nakamoto is just an alias for the author of the paper.
+ As such, we don't really know the true identity of the author of the paper.
+\end_layout
+
+\end_inset
+
+ paper shows an alternative to the current digital commerce system which
+ is more private and more affordable for the buyers and sellers.
+ Furthermore, the paper also shows a novel application for proof-of-work
+ algorithms.
+ The benefits promised by the ideas in the paper have been shown to be very
+ real by present-day cryptocurrencies.
+ However, despite the novelty of the paper, the paper is not without issues.
+ First, the paper lacks a review of related literature.
+ As such, the reader of the paper is deprived of the opportunity to know
+ where the paper stands in terms of the larger body of knowledge surrounding
+ it.
+ Furthermore, a reader which is not familiar with the field of digital currencie
+s might become confused when reading the paper as it doesn't give necessary
+ background information regarding terms such as double-spending.
+ Such lack of background information can be attributed to the lack of a
+ review of related literature in the paper.
+ Second, the idea of the peer-to-peer network proposed by Nakamoto is dependent
+ on the assumption that a large number of devices will be participating
+ in the network.
+ Since the network depends on having honest nodes control a majority of
+ the network, if there are only a few devices running the network and a
+ malicious third party decides to introduce a large number of nodes which
+ is controlled by them, then that third party will have the power to choose
+ which transactions get accepted into a block or not, thus negating the
+ decentralized aspect of the network.
+\end_layout
+
+\begin_layout Bibliography
+\begin_inset CommandInset bibitem
+LatexCommand bibitem
+key "key-1"
+literal "false"
+
+\end_inset
+
+Bonadonna, E.
+ (2013, March 29).
+ Networks II.
+ Bitcoin and the Double-Spending Problem : Networks II Course blog for INFO
+ 4220.
+ Retrieved 2022, from https://blogs.cornell.edu/info4220/2013/03/29/bitcoin-and-th
+e-double-spending-problem/ 
+\end_layout
+
+\begin_layout Bibliography
+\begin_inset CommandInset bibitem
+LatexCommand bibitem
+key "key-2"
+literal "false"
+
+\end_inset
+
+Nakamoto, S.
+ (2008).
+ Bitcoin: A Peer-to-Peer Electronic Cash System.
+ .
+ Bitcoin: A Peer-to-Peer Electronic Cash System.
+ Retrieved 2022, from https://bitcoin.org/bitcoin.pdf.
+ 
+\end_layout
+
+\begin_layout Bibliography
+\begin_inset CommandInset bibitem
+LatexCommand bibitem
+key "key-3"
+literal "false"
+
+\end_inset
+
+Tschorsch, F., &amp; Scheuermann, B.
+ (2016).
+ Bitcoin and beyond: A technical survey on decentralized digital currencies.
+ IEEE Communications Surveys &amp; Tutorials, 18(3), 2084–2123.
+ https://doi.org/10.1109/comst.2016.2535718 
+\end_layout
+
+\end_body
+\end_document

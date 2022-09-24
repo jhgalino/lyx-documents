@@ -1,0 +1,211 @@
+#LyX 2.3 created this file. For more info see http://www.lyx.org/
+\lyxformat 544
+\begin_document
+\begin_header
+\save_transient_properties true
+\origin unavailable
+\textclass article
+\use_default_options true
+\maintain_unincluded_children false
+\language english
+\language_package default
+\inputencoding auto
+\fontencoding global
+\font_roman "default" "default"
+\font_sans "default" "default"
+\font_typewriter "default" "default"
+\font_math "auto" "auto"
+\font_default_family default
+\use_non_tex_fonts false
+\font_sc false
+\font_osf false
+\font_sf_scale 100 100
+\font_tt_scale 100 100
+\use_microtype false
+\use_dash_ligatures true
+\graphics default
+\default_output_format default
+\output_sync 0
+\bibtex_command default
+\index_command default
+\paperfontsize default
+\use_hyperref false
+\papersize default
+\use_geometry false
+\use_package amsmath 1
+\use_package amssymb 1
+\use_package cancel 1
+\use_package esint 1
+\use_package mathdots 1
+\use_package mathtools 1
+\use_package mhchem 1
+\use_package stackrel 1
+\use_package stmaryrd 1
+\use_package undertilde 1
+\cite_engine basic
+\cite_engine_type default
+\use_bibtopic false
+\use_indices false
+\paperorientation portrait
+\suppress_date false
+\justification true
+\use_refstyle 1
+\use_minted 0
+\index Index
+\shortcut idx
+\color #008000
+\end_index
+\secnumdepth 3
+\tocdepth 3
+\paragraph_separation indent
+\paragraph_indentation default
+\is_math_indent 0
+\math_numbering_side default
+\quotes_style english
+\dynamic_quotes 0
+\papercolumns 1
+\papersides 1
+\paperpagestyle default
+\tracking_changes false
+\output_changes false
+\html_math_output 0
+\html_css_as_file 0
+\html_be_strict false
+\end_header
+
+\begin_body
+
+\begin_layout Title
+Review of Related Literature
+\end_layout
+
+\begin_layout Section
+Real-time prediction of projectile penetration to laminates by training
+ machine-learning models with finite-element solver as the trainer
+\end_layout
+
+\begin_layout Standard
+Experimental testing of the penetration resistance of materials can often
+ be expensive and sometimes dangerous.
+ As such, computational simulations are often employed in place as a more
+ affordable substitute.
+ However, these simulations require heavy computer memory and computational
+ time to get results.
+ A combination of simulations and machine learning techniques could potentially
+ reduce the costs and time needed for ballistic impact investigations.
+ In this study, the authors construct a neural network and a decision tree
+ to predict the residual velocity of projectiles using training data obtained
+ from finite-element simulations and experimental tests.
+ In the finite element simulations, 4 different projectile types were fired
+ on a polyurea-steel composite laminate in 3 different angles, with initial
+ speed varying from 200 m/s to 750 m/s.
+ .
+ The residual velocity of the bullet after hitting the laminate were then
+ recorded for 20 time step intervals to produce a total of 3220 data points
+ for training the models.
+ The authors also conducted an experimental investigation on the penetration
+ performance of polymer-aluminum composites.
+ The data from this research was also used to train the models.
+ Results of the study show that the neural network model trained with the
+ finite-element simulation data and the experimental data was able to predict
+ the residual velocities of projectiles for unseen testing cases with good
+ accuracy.
+ Meanwhile, the decision tree model has been found to work better with the
+ finite-element simulation data than the experimental data.
+ It was also found to be more stable compared to the neural network on the
+ finite-element simulation data.
+ However, both models have been found to be unable to predict residual velocitie
+s when trying to predict unseen case configurations (e.g.
+ different initial velocity, different angle of firing, etc).
+\end_layout
+
+\begin_layout Section
+Dealing with limited data in ballistic impact scenarios: an empirical comparison
+ of different neural network approaches
+\end_layout
+
+\begin_layout Standard
+In the research domain of high-speed collisions between solids, numerical
+ simulation techniques are often used.
+ Since a large number of simulations are often required for this domain,
+ large resources and considerable time are often used up by numerical simulation
+s.
+ As such, the use of Artificial Neural Networks (ANN) in this field has
+ received much attention.
+ As such, this study aims to find the best neural network for the study
+ of ballistic impact through a tuning performance process of 4 stages.
+ In the first stage, an empirical comparison of ANN, or more specifically
+ MultiLayer Perceptron (MLP), is conducted with other machine learning alternati
+ves to validity of MLP in this problem domain.
+ These machine learning alternatives include Radial Basis Function, Support
+ Vector Machines, and Recurrent Neural Networks, and Additive White Gaussian
+ Noise.
+ In the second stage, different techniques were considered for working with
+ a limited amount of data in MLPs.
+ These techniques include Hold-out Cross Validation, K-fold Cross Validation,
+ Leave-one-out Cross Validation, Bootstrap Resampling, Alternative Iterative
+ and Balanced Of Cross Validation.
+ The third stage is the selection of the optimal input variables for the
+ MLP using Indicator of Variable Clarity, forward Stepwise Method, and Sensitivi
+ty About the Mean.
+ The last stage is the measurement of the quality of the neural models using
+ Akaike's Information Criterion and minimum description length.
+ The results of the study showed that in Stage 1, MLP performance is better
+ compared to other machine learning alternatives in the domain of ballistic
+ impacts.
+ In Stage 2, it was found that the best technique to deal with the limited
+ amount of data is a combination of K-fold Cross Validation and Additive
+ White Gaussian Noise, since it showed better precision, stability and speed
+ compared to the other techniques.
+ For the third and fourth stage, both showed similar results.
+ The two stages found that the protection's thickness and the projectile's
+ velocity are fundamental variables for the learning of the network, as
+ the lack of these variables in the neural model results to a deviance of
+ 7.65% in terms of precision.
+ Similarly, the materials used by the protection and the projectiles are
+ also important variables, as their lack results to a deviation of 8.91%.
+ The projectile's mass, length, and radius have also been found to be relatively
+ important.
+\end_layout
+
+\begin_layout Section
+Use of Artificial Neural Networks to Optimize Stacking Sequence in UHMWPE
+ Protections
+\end_layout
+
+\begin_layout Standard
+UHMWPE, or ultra-high molecular weight polyethylene, has received considerable
+ attention recently due to its resistance against impacts or blasts which
+ are comparable to aramid fibers [].
+ As such, they have become widely used in armor applications and has become
+ the leading high-performance fibers in the global industry.
+ One of the main concerns of the military industry is finding the best combinati
+on of UHMWPE plies in order to deal with multi-threat such as handguns,
+ shrapnels, and stabbing.
+ When modelling UHMWPE protections, numerical methods based from Finite
+ Element Method (FEM) is often used as they are able to help understand
+ the failure modes and energy absorption mechanisms.
+ However, the number of configurations that can be analyed using FEM is
+ low because of the computational cost required.
+ Artifical Neural Networks (ANN) are a good approach to solve this limitation,
+ as it has been successfully used in other engineering domains.
+ The present study combines ANN, FEM models, and experimental tests in order
+ to find the influence of the stacking sequence of layers in UHWMPE protections
+ on their ballistic performance.
+ First, an FEM model was established and then validated by experimental
+ tests.
+ Afterwards, the FEM model is then used to create training and test data
+ for the ANN.
+ For this study, the position of the layers, the weight ratio of each material,
+ and the areal density were the variables studied for their influence in
+ the ballistic performance of UHMWPE protections.
+ The results of the study showed that the ANN developed was able to predict
+ the ballistic performance of different stacking sequences successfully.
+ Using the ANN, it has been observed that an improvement of 10.7% can be
+ achieved without weight increase.
+ As such, ANN simulations can be used to increase the ballistic performance
+ with lower cost.
+\end_layout
+
+\end_body
+\end_document
